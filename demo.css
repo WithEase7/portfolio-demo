@@ -11,11 +11,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /* min-height: 45rem; */
   height: 100vh;
   width: auto;
   position: relative;
-  margin: 0;
-  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .nav-container {
@@ -24,7 +23,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background-color: rgb(245, 240, 198);
+  background-color: rgb(53, 39, 39);
   z-index: 1;
 }
 .title {
@@ -32,7 +31,7 @@ body {
 }
 .title a {
   text-decoration: none;
-  color: rgb(75, 74, 74);
+  color: white;
   font-size: 1.3rem;
   font-family: 'Chakra Petch', sans-serif;
 }
@@ -47,8 +46,7 @@ body {
   text-decoration: none;
   height: 2rem;
   padding: 1rem;
-  color: rgb(75, 74, 74);
-
+  color: white;
   padding-bottom: 0.3rem;
   margin-right: 2rem;
   transition: 0.2s;
@@ -65,8 +63,7 @@ body {
   border: none;
   outline: none;
   background: none;
-  color: rgb(75, 74, 74);
-
+  color: white;
   font-family: inherit;
   font-size: inherit;
   letter-spacing: 0.02rem;
@@ -103,7 +100,9 @@ body {
 .tagline {
   width: 60%;
 }
-
+.contact {
+  /* border: 1px solid black; */
+}
 .content h1 {
   font-family: 'Baloo Tammudu 2', cursive;
   /* font-family: 'Chakra Petch', sans-serif; */
@@ -124,13 +123,13 @@ body {
   font-size: 1.2rem;
 }
 /* .current-link {
-      border-bottom: 2px solid rgb(150, 245, 121);
-    } */
+    border-bottom: 2px solid rgb(150, 245, 121);
+  } */
 .nav > a:hover {
   background-color: rgba(216, 205, 167, 0.246);
 }
 .title a:hover {
-  color: rgb(228, 46, 219);
+  color: rgb(150, 245, 121);
 }
 .project:hover .project-content {
   display: inline;
@@ -145,52 +144,3 @@ body {
   cursor: pointer;
   border: 3px solid rgb(172, 252, 172);
 }
-.contact-container {
-  margin-top: 7rem;
-  position: relative;
-}
-.contact-me h1{
-    color: white;
-    font-family: 'Baloo Tammudu 2', cursive;
-    text-align: center;
-}
-.contact-form{
-    border: 1px solid black;
-    width: 30rem;
-    height: 30rem;
-    margin: auto;
-    background-color: white;
-}
-.form{
-    width: 70%;
-    padding: 0.5rem;
-    margin: 3rem 3.5rem 2rem 3.5rem;
-    display: flex;
-    background-color: inherit;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #2373f5;
-
-}
-.btn-div{
-    text-align: center;
-    
-}
-.contact-btn{
-    border: none;
-  outline: none;
-  padding: 0.5rem 1rem;
-  color: white;
-  background-color: #2373f5;
-  font-weight: 500;
-  border-radius: 0.2rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border-radius: 1rem;
-}
-h3{
-    text-align: center;
-}
-
-/* Icons Style  */
-
