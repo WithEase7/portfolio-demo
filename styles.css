@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+.bg-img {
+  background-image: url(/images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 20rem;
+  width: auto;
+  position: relative;
+}
+.nav-container {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 1rem;
+}
+.title {
+  font-size: 1.3rem;
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 1.3rem 3rem 1rem 2rem;
+}
+.title a {
+  text-decoration: none;
+  color: white;
+}
+.nav {
+  margin: 1.5rem 1rem 1rem 3rem;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.3rem;
+  margin-right: 2rem;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem;
+  transition: 0.2s;
+  transition-timing-function: cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+.nav a:hover {
+  border-bottom: 2px solid rgb(150, 245, 121);
+}
