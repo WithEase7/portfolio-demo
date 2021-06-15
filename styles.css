@@ -4,20 +4,24 @@ body {
   box-sizing: border-box;
 }
 
-.bg-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.315)),
-    url('/images/background.jpg');
+.container{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.514)),
+    url('/images/agefis-vll0Bb04XTc-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.bg-img {
   height: 100vh;
   width: auto;
   position: relative;
   margin: 0;
-  border: 1px solid rgba(0, 0, 0, 0);
+  overflow: auto;
 }
 
+/* =================================================================Nav-Bar Style*/
 .nav-container {
   position: fixed;
   display: flex;
@@ -33,8 +37,10 @@ body {
 .title a {
   text-decoration: none;
   color: rgb(75, 74, 74);
+  padding: 0.5rem 0.7rem 0.5rem 0.5rem;
   font-size: 1.3rem;
   font-family: 'Chakra Petch', sans-serif;
+  transition: 0.2s ease-out;
 }
 .nav {
   margin: 1.5rem 1rem 0rem 0rem;
@@ -45,7 +51,6 @@ body {
 .nav > a {
   border-radius: 2rem;
   text-decoration: none;
-  height: 2rem;
   padding: 1rem;
   color: rgb(75, 74, 74);
 
@@ -54,6 +59,8 @@ body {
   transition: 0.2s;
   transition-timing-function: cubic-bezier(0.1, 0.1, 0.1, 1);
 }
+
+/* ==============================Dropdown styles*/
 .project {
   height: 2rem;
   margin-right: 2rem;
@@ -81,7 +88,6 @@ body {
 }
 .project-content a {
   color: white;
-  /* background-color: rgb(179, 173, 173); */
   border-radius: 2rem;
   border: 1px solid rgb(172, 252, 172);
   display: block;
@@ -91,6 +97,8 @@ body {
   font-size: inherit;
   padding: 0.5rem 0.7rem 0.5rem 0.5rem;
 }
+
+/* ==============================Content Style*/
 .content {
   position: absolute;
   left: 35%;
@@ -105,13 +113,11 @@ body {
 }
 
 .content h1 {
-  font-family: 'Baloo Tammudu 2', cursive;
-  /* font-family: 'Chakra Petch', sans-serif; */
+  font-family: 'Baloo Tammudu 2';
   margin-top: 17rem;
-  /* text-align: center; */
   font-size: 3rem;
   line-height: 4rem;
-  color: rgb(207, 201, 201);
+  color: rgb(230, 222, 222);
 }
 .learn-btn {
   background-color: #730c9c86;
@@ -123,61 +129,81 @@ body {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 1.2rem;
 }
-/* .current-link {
-      border-bottom: 2px solid rgb(150, 245, 121);
-    } */
+
+/*----------------------------------------------------------------Hover Styles*/
 .nav > a:hover {
-  background-color: rgba(216, 205, 167, 0.246);
+  background-color: rgba(153, 201, 109, 0.671);
 }
 .title a:hover {
-  color: rgb(228, 46, 219);
+  border-radius: 2rem;
+  border: 1px solid rgb(172, 252, 172);
+  background-color:white;
 }
 .project:hover .project-content {
   display: inline;
 }
 .project-content a:hover {
-  background-color: rgba(179, 173, 173, 0.658);
+  background-color: rgba(179, 173, 173, 0.5);
 }
 .project-toggle:hover {
-  background-color: rgba(216, 205, 167, 0.246);
+  background-color: rgba(153, 201, 109, 0.671);
+
 }
 .learn-btn:hover {
   cursor: pointer;
   border: 3px solid rgb(172, 252, 172);
 }
+.contact-btn:hover{
+  cursor: pointer;
+  box-shadow: 0px 3px 10px 1px #2373f5;
+  transition: 0.1s;
+}
+
+/*----------------------------------------------------------------Contact Styles*/
 .contact-container {
   margin-top: 7rem;
-  position: relative;
 }
-.contact-me h1{
-    color: white;
-    font-family: 'Baloo Tammudu 2', cursive;
+.contact-me h2{
+  padding-top: 1.5rem;
+    color: rgb(118, 119, 117);
     text-align: center;
+    font-weight: 100;
 }
 .contact-form{
-    border: 1px solid black;
     width: 30rem;
-    height: 30rem;
-    margin: auto;
+    height: 35rem;
+    margin: 2rem auto;
     background-color: white;
+    border-radius: 1rem;
+    box-shadow: -5px 5px 10px 10px rgba(0, 0, 0, 0.473);
+}
+form{
+  padding-top: 1rem;
 }
 .form{
     width: 70%;
     padding: 0.5rem;
-    margin: 3rem 3.5rem 2rem 3.5rem;
+    margin: 2rem 3.5rem 2rem 3.5rem;
     display: flex;
     background-color: inherit;
     outline: none;
     border: none;
     border-bottom: 1px solid #2373f5;
-
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1rem;
+}
+textarea{
+  resize: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1rem;
 }
 .btn-div{
-    text-align: center;
-    
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
 .contact-btn{
-    border: none;
+  border: none;
   outline: none;
   padding: 0.5rem 1rem;
   color: white;
@@ -188,9 +214,76 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border-radius: 1rem;
 }
+
 h3{
     text-align: center;
+    margin: 1rem;
+    color: red;
 }
 
-/* Icons Style  */
+/* =================================================================Icons Style */
+.icons{
+  margin-top: 3.5rem;
+}
+ul {
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: center;
+}
 
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width:60px;
+  height:auto;
+  display:flex;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.733);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .4s ease;
+}
+
+ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.301);
+  text-decoration:none;
+}
+
+ul li a .fa {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+ul li:nth-child(1) a:hover .fa {
+  color: #3b5998;
+}
+
+ul li:nth-child(2) a:hover .fa {
+  color: #00aced;
+}
+
+ul li:nth-child(3) a:hover .fa {
+  color: #dd4b39;
+}
+
+ul li:nth-child(4) a:hover .fa {
+  color: #007bb6;
+}
+
+ul li:nth-child(5) a:hover .fa {
+  color: #e4405f;
+}
