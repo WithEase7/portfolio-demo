@@ -21,8 +21,13 @@
 <body>
     <div class="container">
         <div class="bg-img">
-            <div class="nav-container">
-                <div class="title"><a href="/demo.html">Abhishek Bhaskar</a></div>
+            <nav class="nav-container">
+                <div class="title"><a href="#">Abhishek Bhaskar</a></div>
+                <div class="toggle-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
                 <div class="nav">
                     <a href="/index.html">Home</a>
                     <div class="project">
@@ -35,17 +40,17 @@
                     </div>
                     <a href="#contact-page">Contact Me</a>
                 </div>
-            </div>
-            <div class="content">
+            </nav>
+            <section class="content">
                 <div class="tagline">
                     <h1>Looking for a Full Stack Website?</h1>
                 </div>
                 <button class="learn-btn">Learn More>>></button>
-            </div>
+            </section>
         </div>
         <div id="contact-page" class="bg-img">
-            <div  class="contact-container">
-               
+            <div class="contact-container">
+
                 <div class="contact-form">
                     <div class="contact-me">
                         <h2>Contact Me</h2>
@@ -63,11 +68,10 @@
                     </div>
                     <div class="icons">
                         <ul>
-                            <li><a href="#" class="fa fa-facebook"></a></li>
-                            <li><a href="#" class="fa fa-twitter"></a></li>
                             <li><a href="#" class="fa fa-google"></a></li>
-                            <li><a href="https://www.linkedin.com/in/abhishek-bhaskar-91318b205/" class="fa fa-linkedin"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="https://www.linkedin.com/in/abhishek-bhaskar-91318b205/"
+                                    class="fa fa-linkedin"></a></li>
+                            <li><a href="https://www.instagram.com/you_are_idiot_but_i_still/" class="fa fa-instagram"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,5 +82,12 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eveniet ul
         </footer> -->
     </div>
 </body>
+<script>
+    var menuToggle = document.querySelector(".toggle-btn");
+var navLinks = document.querySelector(".nav");
 
+menuToggle.addEventListener('click', ()=> {
+    navLinks.classList.toggle('active')
+})
+</script>
 </html>
